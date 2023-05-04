@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binary Search</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../styles/adivinaelnumero.css">
+</head>
+<body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">
+                <img
+                  class="logo-basket"
+                  src="/assets/img/basketball-ball.png"
+                  alt="basket logo"
+                />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://www.linkedin.com/in/marcoarath/"
+                      target="“_blank”"
+                      >Linkedin</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Proyectos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./assets/html/mi-nombre.html">Dime tu nombre</a></li>
+                      <li><a class="dropdown-item" href="./assets/html/calculadora.html">Calculadora</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+	<div class="container mt-5 justify-content-center">
+		<h2 class="text-center">Práctica</h2>
+		<h1 class="text-center mb-3">Adivina mi número</h1>
+		<div class="row">
+			<div class="col-sm-8 mx-auto">
+				<p><strong>Jugaremos Adivina mi Número. Lo voy a intentar adivinar utilizando el metodo de búsqueda binaria.</strong></p>
+				<p>Piensa en un número del 1 al 100 y luego haz clic en el botón "Comenzar".</p>
+				<button id="comenzarBtn" class="btn btn-primary">Comenzar</button>
+				<p id="adivinaP" class="mt-3" style="display: none">¿Es este tu número?</p>
+				<p id="adivinaNumero" class="h2 text-center mt-3" style="display: none"></p>
+				<div id="botones" style="display: none">
+					<button id="siBtn" class="btn btn-success mr-2">Sí</button>
+					<button id="noBtn" class="btn btn-danger">No</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="container my-5 text-center">
+        <div id="gracias" style="display: none">
+            <img src="/assets/img/pinguino.jpg" alt="pinguino bebe">
+            <h2>Gracias por jugar conmigo.</h2>
+        </div>
+        <button id="playAgain" class="btn btn-success my-5" style="display: none">Jugar de nuevo</button>
+    </div>
+
+	<script src="/assets/js/adivinaelnumero.js"></script>
+</body>
+</html>
